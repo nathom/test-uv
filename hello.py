@@ -1,6 +1,4 @@
-def main():
-    print("Hello from test-uv!")
+import jax
 
-
-if __name__ == "__main__":
-    main()
+jax.distributed.initialize()
+print(jax.device_count())
